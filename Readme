@@ -1,0 +1,28 @@
+// framework (Node.js)
+//Node.js is a web application framework built on Chrome's V8 JavaScript engine. It is designed to build scalable network applications and allows developers to use JavaScript for server-side scripting. Node.js uses an event-driven, non-blocking I/O model, making it lightweight and efficient for data-intensive real-time applications that run across distributed devices. It has a rich ecosystem of libraries and modules available through npm (Node Package Manager), which simplifies the development process.
+//Example of a simple HTTP POST request using Node.js
+//API to send data to a server and receive a response
+//API-Application Programming Interface
+
+//REST(Representational state transfer)-Restful API's means that the API is desiged to be used by machine ,not humans
+//1.client server architecture
+//2.stateless
+//3.Cacheable 
+//4.Layered System
+//5.Code on demand (Optional)
+//6.Uniform Interface.
+
+
+//CRUD -Get,Post,Put,Delete
+//Get-Read Resource
+//Post-Create resource
+//Put-Update resource
+//Delete-Delete resource
+
+//Middleware is a function that has access to the request object,response object,and the text function in the applications request-response cycle.
+//MiddleWare can:-
+1.Excess any code 
+2.make changes to the request and response objects.
+3.end the request-response cycle.
+4.call the next middleware in the stack.
+

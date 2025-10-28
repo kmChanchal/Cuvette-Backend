@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "description": "A smooth and responsive wireless mouse.",
+        "price": 25.99,
+        "category": "Electronics",
+        "stock": 150
+        },
+        {
+        "id": 2,
+        "name": "Bluetooth Headphones",
+        "description": "Noise-cancelling over-ear headphones with Bluetooth connectivity.",
+        "price": 89.99,
+        "category": "Electronics",
+        "stock": 80
+        },
+        {
+        "id": 3,
+        "name": "Coffee Maker",
+        "description": "Automatic drip coffee maker with programmable settings.",
+        "price": 49.99,
+        "category": "Home Appliances",
+        "stock": 60
+        },
+        {
+        "id": 4,
+        "name": "Yoga Mat",
+        "description": "Non-slip yoga mat with extra cushioning for comfort.",
+        "price": 19.99,
+        "category": "Fitness",
+        "stock": 200
+        },
+        {
+        "id": 5,
+        "name": "Smartwatch",
+        "description": "Feature-rich smartwatch with fitness tracking and notifications.",
+        "price": 199.99,
+        "category": "Electronics",
+        "stock": 45
+        }
+    ]
+}
