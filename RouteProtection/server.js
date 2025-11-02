@@ -1,8 +1,12 @@
 const express = require('express');
+const helmet = require('helmet');
 const app=express();
 const mainRoutes=require('./Route/main');
 const adminRoutes=require('./Route/admin');
 const PORT=3004;
+
+// Use helmet for security headers, including CSP
+app.use(helmet());
 
 // Mount main routes at /main
 app.use('/main',mainRoutes);
