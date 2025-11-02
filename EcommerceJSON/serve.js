@@ -4,6 +4,13 @@ const path = require('path');
 const fs = require('fs');
 const PORT = 3000;
 app.use(express.json());
+
+// Middleware to set Content Security Policy headers
+app.use((req, res, next) => {
+    res.setHeader('Content-Security-Policy', "default-src 'self'; font-src 'self' data:; connect-src 'self' http://localhost:3000 ws://localhost:3000;");
+    next();
+});
+
 const dataPath = path.join(__dirname, 'data');
 
 async function readProducts(file) {

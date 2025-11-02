@@ -1,0 +1,36 @@
+doctype html
+html(lang='eng')
+head
+meta(charset='UTF-8')
+meta(name='viewport', content='width=device-width, initial-scale=1.0')  
+title Template Engine Example
+link(rel='stylesheet', href='/styles/main.css')
+script(src='/scripts/main.js', defer)
+body
+  header
+    h1 Welcome to the Template Engine Example
+    a(href='/about') About Us
+    main
+        h2 Main Content
+        p This is a sample page rendered using a template engine.
+    footer
+      p &copy; 2024 Template Engine Example
+        a(href='/privacy') Privacy Policy
+        |  |
+
+        a(href='/terms') Terms of Service
+        |  |
+        a(href='/contact') Contact Us
+        p Follow us on
+
+        a(href='https://twitter.com/example', target='_blank') Twitter
+        |  |
+        a(href='https://facebook.com/example', target='_blank') Facebook
+        |  |
+        a(href='https://instagram.com/example', target='_blank') Instagram
+        |  |
+        a(href='https://linkedin.com/company/example', target='_blank') LinkedIn
+    script.
+        console.log('Page loaded successfully.');
+
+        
