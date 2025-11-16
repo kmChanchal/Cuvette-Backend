@@ -1,17 +1,14 @@
+require('dotenv').config();
 const express = require('express');
 const helmet = require('helmet');
-const app=express();
-const mainRoutes=require('./Route/main');
-const adminRoutes=require('./Route/admin');
-const PORT=3004;
-
-// Use helmet for security headers, including CSP
+const app = express();
+const port = process.env.PORT || 3000;
+const mainRouter = require('./Route/main');
+const adminRouter = require('./Route/admin');
 app.use(helmet());
-
-// Mount main routes at /main
-app.use('/main',mainRoutes);
-// Mount admin routes at /admin
-app.use('/admin',adminRoutes);
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+app.use(express.json());
+app.use('/', mainRouter);
+app.use("/admin", adminRouter);
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
